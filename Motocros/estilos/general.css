@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+    font-family: "Anta", sans-serif;
+}
+body{
+    font-family: "Anta", sans-serif;
+    animation: recargar 3s ease forwards;
+}
+#resalto{
+    color: rgb(214, 108, 27);
+    font-size: 30px;
+}
+@keyframes recargar {
+    from{
+        filter: contrast(0);
+        /* filter: blur(30px); */
+
+    }to{
+       filter: contrast(1);
+       /* filter: blur(0);  */
+    }
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+section{
+    view-timeline-name: --image;
+    view-timeline-axis:  block;
+    animation-timeline: -- image;
+    animation-name: show;
+}

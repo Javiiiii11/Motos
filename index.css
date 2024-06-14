@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow: hidden;
+    font-family: "Anta", sans-serif;
+    background-image: url(imagenes/fondo_asfalto-tierra.jpeg);
+    transition: background-image 0.5s;
+    background-size: cover;
+}
+.iconos_fondo {
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+}
+
+.iconos_fondo span {
+    position: absolute;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    animation: move 6s linear infinite;
+}
+.contenedorG{
+    height: 90vh;
+    width: 95vw;
+    border-radius: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0%;
+}
+.contenedor1{
+    background-color: #e00000bd;
+    border-radius: 20px;
+    height: 300px;
+    width: 95%;
+    max-width: 95%;
+    max-height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 0%;
+}
+.contenedor2{
+    background-color: #ff9900d0;
+    border-radius: 20px;
+    height: 300px;
+    width: 95%;
+    max-width: 96%;
+    max-height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 0%;
+}
+.contenedor1dere{
+    /* background-color: rgb(255, 0, 0); */
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.contenedor1izq{
+    background-image: url(imagenes/motoGP.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    height: 100%;
+    width: 40%;
+    z-index: 2;
+}
+.contenedor2dere{
+    background-image: url(imagenes/enduro.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    height: 100%;
+    width: 40%;
+    z-index: 2;
+}
+.contenedor2izq{
+    /* background-color: rgb(212, 0, 255); */
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.C1D1{
+    background: rgb(255, 255,255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 40px;    
+    height: 100%;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.C1D2{
+    /* background-color: rgb(25, 0, 255); */
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.C2I1{
+    background: rgb(255, 255,255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
+    height: 100%;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.C2I2{
+    /* background-color: rgb(25, 0, 255); */
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorG:has(.contenedor1:hover) .contenedor2{
+    filter: blur(3px);
+}
+.contenedorG:has(.contenedor2:hover) .contenedor1{
+    filter: blur(3px);
+}
+
+body:has(.contenedor1:hover){
+    background-image: url(imagenes/fondo_asfalto.png);
+    transition: 0.5s;
+}
+body:has(.contenedor2:hover){
+    background-image: url(imagenes/fondo_tierra.jpeg);
+    transition: 0.5s;
+}
+/*************************************/
+.button {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #fd7231;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 100;
+  }
+  
+  .button:hover {
+    background: #e60d0d;
+    color: white;
+    font-size: 1.5em;
+  }
+  .button2 {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #ff0000;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 100;
+  }
+  
+  .button2:hover {
+    background: #fd7231;
+    color: white;
+    font-size: 1.5em;
+  }
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+/****************fondo****************/
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+/* Partícula 1 */
+.iconos_fondo{
+    pointer-events: none;
+}
+.iconos_fondo span:nth-child(1) {
+    top: 20%;
+    left: 30%;
+    animation-duration: 10s;
+    animation-delay: -5s;
+    transform-origin: 10vw 10vh;
+    background-image: url(imagenes/a1.png);
+    background-size: cover;
+}
+
+/* Partícula 2 */
+.iconos_fondo span:nth-child(2) {
+    top: 50%;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: -6s;
+    transform-origin: -20vw -20vh;
+    background-image: url(imagenes/a2.png);
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Partícula 3 */
+.iconos_fondo span:nth-child(3) {
+    top: 80%;
+    left: 20%;
+    animation-duration: 15s;
+    animation-delay: -7s;
+    transform-origin: 30vw -30vh;
+    background-image: url(imagenes/a3.png);
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Partícula 4 */
+.iconos_fondo span:nth-child(4) {
+    top: 70%;
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: -8s;
+    transform-origin: 0 0;
+    background-image: url(imagenes/a4.png);
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Partícula 5 */
+.iconos_fondo span:nth-child(5) {
+    top: 30%;
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: -9s;
+    transform-origin: 0 0;
+    background-image: url(imagenes/a5.png);
+    background-size: cover;
+    padding: 10px;}
+
+/* Partícula 6 */
+.iconos_fondo span:nth-child(6) {
+    top: 40%;
+    left: 10%;
+    animation-duration: 14s;
+    animation-delay: -10s;
+    transform-origin: 0 0;
+    background-image: url(imagenes/a6.png);
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Agregar más estilos de partículas según sea necesario */

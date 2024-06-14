@@ -1,0 +1,103 @@
+
+body{
+    background-image: url(../../imagenes/fondo_asfalto.png);
+    overflow-x: hidden;
+}
+.tituloA{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.titulo{
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(230, 24, 24);
+    background-color: black;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 40px;
+}
+.slider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow-x: hidden
+}
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.texto{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: rgb(255, 255, 255);
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.texto h2{
+    font-size: 25px;
+    width: 60%;
+    margin-bottom: 100px;
+    transform: translateY(-280px)translateX(200px);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 40px;
+}
+.texto p{
+    background-color: rgba(67, 82, 82, 0.778);
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+.slider-box img{
+    width: 50%;
+    transform: translateX(50%);
+    border-radius: 40px;
+}
+@keyframes slide{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+
+}
+@media(max-width: 991px) {
+    body{
+        padding: 30px;
+    }
+    .slider-box{
+        width: 100%;
+    }
+    .texto{
+        top: 50px;
+        padding: 0 25px;
+    }
+    .texto h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+}

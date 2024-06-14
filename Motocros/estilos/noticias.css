@@ -1,0 +1,138 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-image: url(../../imagenes/fondo_tierra.jpeg);
+}
+.contendor2{
+    display: flex;
+    height: 100vh;
+    position: relative;
+} 
+.izquierda, .derecha{
+    background-color: rgba(68, 68, 68, 0.829);
+    color: white;
+    font-size: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.izquierda{
+    height: 500px;
+    float: left;
+    width: 50%;
+}
+.izquierda2{
+    background-color: rgba(68, 68, 68, 0.829);
+    position: relative;
+}
+.izquierda2 p{
+    color: white;
+    font-size: 30px;
+}
+.derecha{
+    float: right;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+}
+.derecha p{
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.derecha2{
+    height: 500px;
+    float: right;
+    width: 50%;
+}
+.foto1{
+    background-image: url('../imagenes-videos/imaganes/n1.png');
+    background-position: center;
+    background-size: cover;
+}
+.foto2{
+    background-image: url('../imagenes-videos/imaganes/n2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.foto3{
+    background-image: url('../imagenes-videos/imaganes/n3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.foto4{
+    background-image: url('../imagenes-videos/imaganes/n4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.izquierda2{
+    float: left;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+}
+.izquierda2 p{
+   font-size: 20px;
+   padding-left: 20%;
+}
+.izquierda2, .derecha2{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-top: 10px;
+}
+nav ul li:last-child{
+    margin-top: 5px;
+}
+
+.abajo h2{
+    color: white;
+}
+.clasificacion{
+    /* background-color: rgba(68, 68, 68, 0.829); */
+    height: 3000px;
+}
+.abajo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(68, 68, 68, 0.829);
+    height: 1100px;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+     flex-direction: column;
+    border-radius: 0px 0px 20px 20px ;
+
+}
+table {
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    transform: translateY(70px);
+    color: white;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #c58a2b;
+}
+th {
+    background-color: #dc8833;
+}
+tr:nth-child(even) {
+    background-color: #000000;
+}
+tr:hover {
+    background-color: #f8a94270;
+}
